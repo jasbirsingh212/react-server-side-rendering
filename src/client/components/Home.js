@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Home = () => {
   return (
@@ -7,6 +7,6 @@ const Home = () => {
       <button onClick={() => console.log("Jasbir Singh")}>Print Name</button>
     </div>
   );
-}
+};
 
-export default Home
+export default Home;
