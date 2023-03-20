@@ -1,10 +1,17 @@
 //1 required packages for ssr
-const express = require("express");
+//const express = require("express"); //common JS way of importing modules
+import express from 'express'; // module JS or ES6;
+
+//need to write same code on
+//server-side and client-side
 
 //2 react setup to ssr
-const React = require("react");
-const renderToString = require("react-dom/server").renderToString;
-const Home = require("./client/components/Home").default;
+// const React = require("react");
+// const renderToString = require("react-dom/server").renderToString;
+// const Home = require("./client/components/Home").default;
+import React  from 'react';
+import { renderToString } from 'react-dom/server';
+import Home from './client/components/Home';
 //
 
 //1 started/initalized express app
